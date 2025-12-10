@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    
-    tools {
-        nodejs "NodeJS-18"
-    }
 
     environment {
         DOCKER_IMAGE = "saadtw/nodejs-cicd-app"
