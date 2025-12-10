@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({
-    message: "Welcome to DevOps CI/CD Pipeline!",
+    message: "Welcome to DevOps CI/CD Pipeline! Edited version.",
     status: "Running",
     timestamp: new Date().toISOString(),
   });

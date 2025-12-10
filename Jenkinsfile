@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_IMAGE = "yourusername/nodejs-cicd-app"
+        DOCKER_IMAGE = "saadtw/nodejs-cicd-app"
         DOCKER_TAG = "latest"
     }
     
@@ -10,7 +10,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 echo 'Cloning repository from GitHub...'
-                git branch: 'main', url: 'https://github.com/YOUR_USERNAME/nodejs-cicd-pipeline.git'
+                git branch: 'main', url: 'https://github.com/saadtw/nodejs-cicd-pipeline.git'
             }
         }
         
